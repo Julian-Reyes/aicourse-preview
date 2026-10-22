@@ -1,9 +1,0 @@
-import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{n}from"./ui.DRdKtl6r.js";var r=e(),i=t();function a(){let e=navigator.userAgent.toLowerCase();return e.includes(`win`)?`windows`:e.includes(`mac`)?`mac`:e.includes(`linux`)?`linux`:``}function o({tabs:e,lang:t=`pt`}){let[o,s]=(0,r.useState)(0),[c,l]=(0,r.useState)(!1);(0,r.useEffect)(()=>{let t=a(),n=e.findIndex(e=>e.os===t);n>=0&&s(n)},[]);async function u(){try{await navigator.clipboard.writeText(e[o].code),l(!0),setTimeout(()=>l(!1),1500)}catch{}}let d=e[o];return(0,i.jsxs)(`div`,{className:`ostabs`,children:[(0,i.jsx)(`div`,{className:`ostabs-bar`,role:`tablist`,children:e.map((e,t)=>(0,i.jsx)(`button`,{role:`tab`,"aria-selected":t===o,className:t===o?`active`:``,onClick:()=>s(t),children:e.label},e.label))}),(0,i.jsxs)(`div`,{className:`ostabs-code`,children:[(0,i.jsx)(`pre`,{children:(0,i.jsx)(`code`,{children:d.code})}),(0,i.jsx)(`button`,{className:`copy-btn`,onClick:u,children:n(t,c?`copied`:`copy`)})]}),d.note&&(0,i.jsx)(`p`,{className:`ostabs-note muted`,children:d.note}),(0,i.jsx)(`style`,{children:`
-        .ostabs { margin: 1.4em 0; }
-        .ostabs-bar { display: flex; flex-wrap: wrap; gap: 4px; }
-        .ostabs-bar button { padding: 7px 14px; font: 600 14px var(--font-sans); color: var(--muted); background: var(--surface-2); border: 1px solid var(--border); border-bottom: 0; border-radius: 8px 8px 0 0; cursor: pointer; }
-        .ostabs-bar button.active { color: var(--code-text); background: var(--code-bg); border-color: var(--code-bg); }
-        .ostabs-code { position: relative; }
-        .ostabs-code pre { margin: 0; padding: 16px 90px 16px 16px; background: var(--code-bg); color: var(--code-text); border-radius: 0 8px 8px 8px; overflow-x: auto; font-size: 14.5px; }
-        .ostabs-note { margin: 8px 0 0; font-size: 14px; }
-      `})]})}export{o as default};
