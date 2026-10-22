@@ -1,0 +1,15 @@
+import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{n}from"./ui.DRdKtl6r.js";var r=e(),i=t();function a({title:e,intro:t,code:a,bugLines:o,explain:s,fix:c,hint:l,lang:u=`pt`}){let d=a.replace(/\n$/,``).split(`
+`),[f,p]=(0,r.useState)([]),[m,h]=(0,r.useState)(!1),[g,_]=(0,r.useState)(!1);function v(e){m||g||(o.includes(e)?h(!0):f.includes(e)||p([...f,e]))}let y=m||g;return(0,i.jsxs)(`div`,{className:`widget bug`,children:[(0,i.jsx)(`span`,{className:`widget-label`,children:n(u,`bug.label`)}),(0,i.jsx)(`h4`,{children:e??n(u,`bug.label`)}),t&&(0,i.jsx)(`p`,{className:`bug-intro`,children:t}),(0,i.jsx)(`p`,{className:`muted bug-hint`,children:n(u,`bug.instructions`)}),(0,i.jsx)(`pre`,{className:`bug-code`,children:d.map((e,t)=>{let n=t+1,r=`bug-line`;return y&&o.includes(n)?r+=` is-bug`:f.includes(n)&&(r+=` is-wrong`),(0,i.jsxs)(`button`,{className:r,onClick:()=>v(n),disabled:y,children:[(0,i.jsx)(`span`,{className:`bug-ln`,children:n}),(0,i.jsx)(`span`,{className:`bug-text`,children:e||` `})]},n)})}),!y&&f.length>0&&(0,i.jsxs)(`div`,{className:`feedback bad`,children:[n(u,`bug.notIt`),` `,f.length>=2&&l?l:n(u,`bug.tryAgain`)]}),!y&&f.length>=3&&(0,i.jsx)(`button`,{className:`btn btn-ghost btn-sm bug-reveal`,onClick:()=>_(!0),children:n(u,`bug.reveal`)}),y&&(0,i.jsxs)(`div`,{className:`feedback ok`,children:[(0,i.jsx)(`strong`,{children:n(u,m?`bug.found`:`bug.revealed`)}),s,c&&(0,i.jsxs)(i.Fragment,{children:[(0,i.jsx)(`div`,{className:`bug-fix-label`,children:n(u,`bug.fixed`)}),(0,i.jsx)(`code`,{className:`bug-fix`,children:c})]})]}),(0,i.jsx)(`style`,{children:`
+        .bug .bug-intro { margin: 0 0 6px; }
+        .bug .bug-hint { margin: 0 0 10px; font-size: 14px; }
+        .bug .bug-code { margin: 0; padding: 8px 0; background: var(--code-bg); color: var(--code-text); border-radius: 8px; overflow-x: auto; font-size: 14px; line-height: 1.5; }
+        .bug .bug-line { display: flex; width: 100%; min-width: max-content; padding: 1px 12px 1px 0; font: inherit; color: inherit; text-align: left; background: transparent; border: 0; border-left: 3px solid transparent; cursor: pointer; white-space: pre; }
+        .bug .bug-line:hover:not(:disabled) { background: rgb(255 255 255 / 0.07); }
+        .bug .bug-line:disabled { cursor: default; }
+        .bug .bug-line.is-wrong { background: rgb(255 90 80 / 0.14); border-left-color: #ff6b61; }
+        .bug .bug-line.is-bug { background: rgb(80 220 140 / 0.16); border-left-color: #57d388; }
+        .bug .bug-ln { display: inline-block; width: 3em; padding-right: 12px; text-align: right; color: #6b7080; user-select: none; flex-shrink: 0; }
+        .bug .bug-reveal { margin-top: 10px; }
+        .bug .bug-fix-label { margin-top: 8px; font-weight: 600; font-size: 14px; }
+        .bug .bug-fix { display: block; margin-top: 4px; padding: 8px 10px; background: var(--code-bg); color: var(--code-text); border-radius: 6px; font-size: 14px; overflow-x: auto; white-space: pre; }
+      `})]})}export{a as default};

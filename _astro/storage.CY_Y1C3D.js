@@ -1,0 +1,1 @@
+var e=`iap:`;function t(t,n){try{let r=localStorage.getItem(e+t);return r===null?n:JSON.parse(r)}catch{return n}}function n(t,n){try{localStorage.setItem(e+t,JSON.stringify(n))}catch{}}var r=`iap:progress`;function i(e){return t(`done:${e}`,!1)}function a(e,t){n(`done:${e}`,t),window.dispatchEvent(new CustomEvent(r))}export{a,n as i,i as n,t as r,r as t};
