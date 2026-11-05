@@ -1,4 +1,4 @@
-import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{n}from"./ui.DQsrDD7Q.js";import{a as r,i,n as a,o,r as s,t as c}from"./dist.Buht3Jsm.js";var l=e(),u=t(),d={html:a,css:s,js:i},f={html:`HTML`,css:`CSS`,js:`JavaScript`},p=`<script>(function () {
+import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{n}from"./ui.CDqDUU38.js";import{a as r,i,n as a,o,r as s,t as c}from"./dist.Buht3Jsm.js";var l=e(),u=t(),d={html:a,css:s,js:i},f={html:`HTML`,css:`CSS`,js:`JavaScript`},p=`<script>(function () {
   function fmt(v) {
     if (typeof v === 'string') return v;
     if (v === undefined || typeof v === 'function') return String(v);
