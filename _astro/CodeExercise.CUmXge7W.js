@@ -1,4 +1,4 @@
-import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{a as n,c as r}from"./storage.DhUHqjDZ.js";import{n as i}from"./ui.CS7u8YId.js";import{a,i as o,n as s,o as c,r as l,t as u}from"./dist.Buht3Jsm.js";var d=e(),f=t(),p={js:o,html:s,css:l},m={js:`JavaScript`,html:`HTML`,css:`CSS`},h=3e3,g=`
+import{t as e}from"./react.CvnImTBr.js";import{t}from"./jsx-runtime.Cr1s1OSH.js";import{a as n,c as r}from"./storage.DhUHqjDZ.js";import{n as i}from"./ui.C3XncdFI.js";import{a,i as o,n as s,o as c,r as l,t as u}from"./dist.Buht3Jsm.js";var d=e(),f=t(),p={js:o,html:s,css:l},m={js:`JavaScript`,html:`HTML`,css:`CSS`},h=3e3,g=`
 var output = [], shown = 0, MAX_SHOWN = 200, MAX_KEPT = 2000, userUrl = '';
 function fmt(v) {
   if (typeof v === 'string') return v;

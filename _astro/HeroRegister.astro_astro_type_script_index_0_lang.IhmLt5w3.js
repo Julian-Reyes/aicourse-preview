@@ -1,0 +1,1 @@
+import{r as e}from"./auth.CqyrGryu.js";for(let t of document.querySelectorAll(`[data-hero-register]`)){let n=e();t.querySelector(`[data-view="out"]`).hidden=n,t.querySelector(`[data-view="in"]`).hidden=!n}
